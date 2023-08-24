@@ -8,7 +8,7 @@ app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "src/views"));
 
 // set serving static file
-app.use(express.static(path.join("src/assets")));
+app.use(express.static(path.join(__dirname, "src/assets")));
 
 // parsing data
 app.use(express.urlencoded({ extended: false }));
